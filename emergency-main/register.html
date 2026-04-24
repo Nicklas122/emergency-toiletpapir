@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> <img src="img/logoo.svg" alt="">FORSIDE</a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="h1-text">
+    <h1>INDBERET</h1>
+    <div class="boks">
+
+      <section id="form-section">
+        <article id="form-info">
+          <h2>Tilmeld dig</h2>
+          <p>Løb aldrig tør for toiletpapir og få sendt toiletpapir hver måned.</p>
+        </article>
+        <form aria-label="sign up form" id="webform">
+
+          <div class="form-group">
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" required />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group">
+            <label for="måned">Levering</label>
+            <select id="måned" name="måned">
+              <option value="">Vælg antal</option>
+              <option value="1">Månedligt</option>
+              <option value="2">Hver 2. måned</option>
+              <option value="4">Hver 3. måned</option>
+              <option value="8">Hvert halve år</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="antal">Antal ruller</label>
+            <select id="antal" name="antal">
+              <option value="">Vælg antal</option>
+              <option value="1">1 rulle</option>
+              <option value="2">2 ruller</option>
+              <option value="4">4 ruller</option>
+              <option value="8">8 ruller</option>
+              <option value="16">16 ruller</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="terms">
+              <input type="checkbox" id="terms" name="accept_terms" value="yes" required />
+              Accept terms
+            </label>
+            <p class="error-message">Please tick the box</p>
+          </div>
+
+          <button>Sign up</button>
+
+        </form>
+      </section>
+      <section id="form-summary">
+        <h2>Summary</h2>
+        <article>
+          <p class="placeholder">Opsummering</p>
+          <div class="opsum">
+            <p>First name: <span id="first_output"></span></p>
+            <p>Last name: <span id="last_output"></span></p>
+            <p>Email: <span id="email_output"></span></p>
+            <p>Password: <span id="pass_output"></span></p>
+            <p>Levering: <span id="måned_output"></span></p>
+            <p>Antal ruller: <span id="antal_output"></span></p>
+            <p>Terms accepted: <span id="terms_output"></span></p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li>Site udviklet af Nicklas Juel Rasmussen</li>
+      </ul>
+      <ul>
+        <li>2026</li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/forms.js"></script>
+</body>
+
+</html>

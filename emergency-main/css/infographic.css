@@ -1,0 +1,102 @@
+#head-txt {
+  fill: rgb(54, 54, 54);
+}
+.info-graphic,
+.info-text {
+  background-color: lightblue;
+  padding: 20px 0;
+}
+/* .info-graphic {
+  border-radius: 0;
+  margin: 60px auto 80px auto;
+} */
+
+.info-graphic {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.info-graphic svg {
+  height: 100%;
+  width: auto;
+  transform: scale(2);
+  transform-origin: 80% center;
+}
+
+.info-text h2 {
+  line-height: 3rem;
+  text-align: center;
+  background-color: var(--color-headline-bg);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+.info-text h3 {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.info-text > *:not(:first-child) {
+  margin: 0 clamp(1rem, 10%, 7rem);
+}
+.info-text p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0 0 1.2rem 0;
+  padding: 0;
+}
+.info-box {
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  background-color: var(--color-card-bg);
+}
+
+.info-box:nth-of-type(2n) {
+  background-color: var(--color-card-bg-inverted);
+}
+#rulle1,
+#rulle2,
+#rulle3 {
+  cursor: pointer;
+  pointer-events: all;
+}
+.btn {
+  z-index: 10;
+  position: relative;
+}
+
+.btn > button {
+  background-color: #e3e1d8;
+  color: black;
+  font-weight: var(--font-weight-bold);
+  padding: 5px 12px;
+  border-radius: var(--border-radius-links);
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  /* background-color: var(--color-link-bg); */
+}
+
+.btn > button:hover {
+  outline: 1px solid #0008;
+}
+
+.btn > button:focus {
+  outline: 2px solid black;
+  background-color: lightblue;
+}
+
+#requirement {
+  color: white;
+}
+.info-text h2 {
+  color: white;
+}
+nav {
+  color: white;
+}
+
+.h1-text h1 {
+  color: white;
+}
