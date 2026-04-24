@@ -1,0 +1,89 @@
+:root {
+  /* Background color */
+  --color-bg: light rgb(200, 22, 22);
+
+  /* Header background color */
+  --color-head-bg: #625e5c;
+
+  /* Logotype */
+  --color-logotype-bg: #2a2828;
+  --color-text-logotype: black;
+  --font-logotype-size: 1rem;
+
+  /* Global menu */
+  --color-menu-bg: #5a5b5e;
+  /* Links */
+  --color-link-bg: #78766e;
+  --color-link-hover: #fff;
+  --color-link-active: #99958f;
+  --border-radius-links: 1px;
+
+  /* Headlines (size)*/
+  --font-h1-size: 1rem;
+  --font-h2-size: 1rem;
+  --font-h3-size: 1rem;
+
+  --headline2-size: 1rem;
+  --headline3-size: 1rem;
+  --font-sub1-size: 1rem;
+
+  /* Headlines (color) */
+  --color-headline-bg: #4b4545;
+
+  /* Tekst */
+  --color-text: #000;
+  --color-text-inverted: #cdccc4;
+
+  /* Andet tekst */
+  --followup-text-size: 1rem;
+
+  /*  Margins */
+  --margin-head-bottom: 5px;
+
+  /* Borders */
+  --border-radius: 5px;
+
+  /* Cards */
+  --color-card-bg: #e3e1d8;
+  --color-card-bg-inverted: #4d4e4f;
+  --color-cta-card-bg: #847f7e;
+  --color-cta-card-bg-inverted: #c0bfb9;
+
+  /* Fonts & font weights*/
+  --font-family-sans: ui-sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 300;
+  --font-weight-light: 200;
+
+  /* Infographics background colors*/
+  --color-info-bg: #676161;
+}
+.boks {
+  display: flex;
+  background: lightblue;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+#form-section {
+  flex: 1;
+  padding: 2.5rem;
+  border-right: 1px solid #eee;
+}
+
+#form-summary {
+  flex: 1;
+  padding: 2.5rem;
+  background: #f9f9f9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}

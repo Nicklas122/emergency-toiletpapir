@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/forside.css">
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> <img src="img/LOGOO.svg" alt=""> FORSIDE</a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="frontside">
+    <!-- Header med sektion logo -->
+    <section id="topsection">
+      <img src="img/logoo.svg" alt="logosos">
+      <div>
+        <h1>LØBET TØR FOR PAPIR?</h1>
+        <p>Følg siden for guidelines hvis du er løbet tør for toiletpapir</p>
+      </div>
+    </section>
+    <div id="art-news-wrapper">
+      <!-- sektion med artiker -->
+      <article id="grid3">
+        <div>
+          <img src="img/toiletrullerpågulv.png" alt="">
+        </div>
+        <div>
+          <h2>WHAT TO DO</h2>
+          <p>Har du ligesom mange andre stået i en situation hvor du ikke har mere toiletpapir? Jamen så er du det helt
+            rigtige sted. Følg med på siden for guidelines.</p>
+          <a href="instruction.html">Guide til dig</a>
+        </div>
+      </article>
+      <article id="grid2">
+        <div class="nr2">
+          <img src="img/toiletrulle.png" alt="">
+        </div>
+        <div>
+          <h2>LØB ALDRIG TØR FOR PAPIR</h2>
+          <p>Tilmeld dig vores abonnement og løb aldrig tør for papir</p>
+          <a href="register.html">Tilmeld dig her</a>
+        </div>
+      </article>
+
+      <article id="grid1">
+        <div>
+          <img src="img/mandmedruller.png" alt="">
+        </div>
+        <div>
+          <h2>Historien om Kasper</h2>
+          <button popovertarget="kasper_popover">Læs mere</button>
+          <div id="kasper_popover" popover>
+            <button popovertarget="kasper_popover">Luk</button>
+            <h4>Historien om Kasper</h4>
+            <time class="newsDate" datetime="2026-04-23">23. april 2026</time>
+            <img src="img/mandmedruller.png" alt="Kasper med ruller">
+            <p> Kasper havde i årevis kæmpet med det samme tilbagevendende problem — han løb
+              altid tør for toiletpapir på de mest ubelejlige tidspunkter. Midt om natten,
+              inden en vigtig mødedag, eller når gæsterne var på vej.</p>
+            <br>
+            <p>En tirsdag morgen, efter endnu en katastrofe af den slags, tog han sig endelig
+              beslutningen. Han tilmeldte sig vores faste levering af toiletpapir — og har
+              siden aldrig set sig tilbage.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- sektion med breaking news -->
+    <article id="breakingnews1">
+      <section id="breakingnews">
+        <div class="break">
+
+          <h1>Breaking news</h1>
+        </div>
+        <h2>Fuldstænding panik</h2>
+        <div>
+          <img src="img/mandpaatoilet.png" alt="">
+        </div>
+        <details open name="accordion">
+          <summary>LÆS MERE</summary>
+          <div class="content">
+            <p>Lars sad på kummen i flere timer fordi han ikke vidste hvad han skulle gøre</p>
+          </div>
+        </details>
+      </section>
+      <section id="breakingnews2">
+        <h2>Nyt borgerforeslag</h2>
+        <details open name="accordion">
+          <summary>LÆS MERE</summary>
+          <div class="content">
+            <p>Borgere af Ringsted kommune har sendt foreslag ud omkring nød telefon til toiletpapir. Personlig guide,
+              samt mulighed for runnere</p>
+          </div>
+        </details>
+      </section>
+    </article>
+    <!-- sektion med accordion -->
+
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li>Site udviklet af Nicklas Juel Rasmussen</li>
+      </ul>
+      <ul>
+        <li>2026</li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>
